@@ -11,10 +11,10 @@ class UserLogin(BaseModel):
 # Connect to MySQL database
 db = mysql.connector.connect(
     host="localhost",
-    port="5432",
-    user="daffashafwan",
-    passwd="",
-    database="appdb"
+    port="dbport",
+    user="dbuser",
+    passwd="dbpassword",
+    database="dbname"
 )
 
 @app.post("/login")
